@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <deccantitle
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                fieldLabel="DeccanTitle"
+                name="./deccanTitle"/>
+            <deccandes
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                fieldLabel="DeccanDes"
+                name="./deccandes"/>
+            <deccanimage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/pathfield"
+                fieldLabel="DeccanImage"
+                name="./deccanimage"/>
+            <deccandop
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/datepicker"
+                fieldLabel="DeccanPublishDate"
+                name="./deccandate"/>
+            <deccannumber
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                fieldLabel="DeccanNumber"
+                name="./deccannumber"/>
+            <multifield
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                fieldLabel="deccanMulti">
+                <field
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                    fieldLabel="CompanyNames"
+                    name="./deccancompany"/>
+            </multifield>
+            <checkbox
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/check"
+                name="./deccancheck"/>
+        </items>
+    </content>
+</jcr:root>
